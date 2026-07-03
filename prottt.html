@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taha Imran | Digital Marketing Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        :root {
+            --neon-blue: #00f0ff;
+            --neon-purple: #c026d3;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+        }
+
+        .neon-text {
+            text-shadow: 0 0 10px var(--neon-blue),
+                        0 0 20px var(--neon-blue);
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 25px 50px -12px rgb(0 240 255 / 0.15);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(to right, #00f0ff, #c026d3);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+
+        .section-title {
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #00f0ff, #c026d3);
+            bottom: -8px;
+            left: 0;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-2xl bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center font-bold text-xl">TI</div>
+                <span class="heading-font text-2xl font-semibold tracking-tighter">TAHA IMRAN</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <a href="https://www.linkedin.com/in/taha-imran-6a409630b" target="_blank"
+               class="px-6 py-3 bg-white text-black rounded-2xl font-semibold hover:bg-white/90 transition-all flex items-center gap-2">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-3 px-5 py-2 bg-white/5 border border-white/10 rounded-3xl text-sm">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    Available for freelance opportunities
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-bold heading-font tracking-tighter leading-none">
+                    Digital Marketing<br>
+                    <span class="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">that converts</span>
+                </h1>
+                
+                <p class="text-xl text-zinc-400 max-w-lg">
+                    Meta Ads • Lead Generation • YouTube SEO • Social Media Strategy<br>
+                    3+ years turning clicks into customers across UK, US & Pakistan.
+                </p>
+                
+                <div class="flex gap-4">
+                    <a href="#contact" 
+                       class="px-8 py-4 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-3xl font-semibold text-lg hover:scale-105 transition-all">
+                        Let's Work Together
+                    </a>
+                    <a href="#work" 
+                       class="px-8 py-4 border border-white/30 rounded-3xl font-medium hover:bg-white/5 transition-all">
+                        View My Work
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-8 text-sm">
+                    <div>
+                        <div class="text-3xl font-bold text-cyan-400">3+</div>
+                        <div class="text-zinc-400">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-purple-400">50+</div>
+                        <div class="text-zinc-400">Campaigns Managed</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-pink-400">ROI</div>
+                        <div class="text-zinc-400">Focused</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="aspect-square max-w-md mx-auto relative">
+                    <img src="/home/workdir/attachments/ChatGPT Image Apr 24, 2026, 11_13_58 PM.png" 
+                         alt="Taha Imran" 
+                         class="w-full rounded-3xl shadow-2xl border-4 border-white/10 object-cover">
+                    <div class="absolute -bottom-4 -right-4 bg-zinc-900 border border-cyan-400 rounded-2xl px-6 py-3 flex items-center gap-3">
+                        <div class="text-emerald-400">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">Currently Open</div>
+                            <div class="text-xs text-zinc-400">for international projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 flex flex-col items-center gap-2 text-xs tracking-widest">
+            <div class="animate-bounce">SCROLL</div>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5">
+                    <h2 class="section-title text-5xl heading-font font-semibold mb-8">About Me</h2>
+                    <div class="prose prose-invert text-zinc-300 text-lg">
+                        <p class="mb-6">Results-driven Digital Marketer with 3+ years of experience in lead generation and social media management for clients in the UK, US, and Pakistan.</p>
+                        <p>I specialize in high-ROI Meta Ads campaigns, full-funnel strategies, YouTube SEO, and creating scroll-stopping creatives that actually convert.</p>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <a href="/home/workdir/attachments/Taha's resume.pdf" 
+                           target="_blank"
+                           class="inline-flex items-center gap-3 border border-white/30 px-6 py-4 rounded-3xl hover:bg-white/5 transition-all">
+                            <i class="fas fa-download"></i>
+                            <span>Download Full Resume (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-7">
+                    <div class="bg-zinc-950 border border-white/10 rounded-3xl p-10">
+                        <h3 class="text-cyan-400 mb-6 text-xl font-medium">What I Bring</h3>
+                        <div class="grid grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <div class="flex gap-4">
+                                    <div class="w-12 h-12 bg-cyan-400/10 rounded-2xl flex items-center justify-center text-2xl">📊</div>
+                                    <div>
+                                        <div class="font-semibold">Data-Driven</div>
+                                        <div class="text-sm text-zinc-400">A/B testing, analytics &amp; optimization obsessed</div>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="w-12 h-12 bg-purple-400/10 rounded-2xl flex items-center justify-center text-2xl">🎨</div>
+                                    <div>
+                                        <div class="font-semibold">Creative</div>
+                                        <div class="text-sm text-zinc-400">Design scroll-stopping creatives that convert</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="flex gap-4">
+                                    <div class="w-12 h-12 bg-pink-400/10 rounded-2xl flex items-center justify-center text-2xl">🌍</div>
+                                    <div>
+                                        <div class="font-semibold">International</div>
+                                        <div class="text-sm text-zinc-400">UK, US &amp; Pakistan market expert</div>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="w-12 h-12 bg-emerald-400/10 rounded-2xl flex items-center justify-center text-2xl">🚀</div>
+                                    <div>
+                                        <div class="font-semibold">Full-Stack</div>
+                                        <div class="text-sm text-zinc-400">Marketing + Landing Page Optimization</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="work" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title text-5xl heading-font font-semibold mb-12">Work Experience</h2>
+            
+            <div class="space-y-16">
+                <!-- Solution Givers -->
+                <div class="grid md:grid-cols-12 gap-8">
+                    <div class="md:col-span-4">
+                        <div class="text-zinc-400">Feb 2025 – Mar 2026</div>
+                        <div class="font-semibold text-2xl mt-1">Solution Givers Ltd.</div>
+                        <div class="text-cyan-400">Social Media Executive • Lahore</div>
+                    </div>
+                    <div class="md:col-span-8 text-zinc-300">
+                        <ul class="space-y-4 list-disc list-outside pl-5">
+                            <li>Created, scheduled, and published daily content across multiple platforms while maintaining strong brand consistency.</li>
+                            <li>Managed audience engagement by responding to comments and DMs, improving follower relationships.</li>
+                            <li>Tracked KPIs and contributed to monthly performance reports.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Najeeb and Sons -->
+                <div class="grid md:grid-cols-12 gap-8">
+                    <div class="md:col-span-4">
+                        <div class="text-zinc-400">Jun 2023 – Feb 2024</div>
+                        <div class="font-semibold text-2xl mt-1">Najeeb and Sons</div>
+                        <div class="text-cyan-400">Digital Marketer • Lahore</div>
+                    </div>
+                    <div class="md:col-span-8 text-zinc-300">
+                        <ul class="space-y-4 list-disc list-outside pl-5">
+                            <li>Planned and executed full-funnel digital marketing campaigns across Meta, Google Ads for UK, US &amp; Pakistan markets.</li>
+                            <li>Optimized paid campaigns with precise targeting, A/B testing, and budget control — consistently maximized ROI.</li>
+                            <li>Analyzed performance and implemented data-driven improvements.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Miraj Lighting -->
+                <div class="grid md:grid-cols-12 gap-8">
+                    <div class="md:col-span-4">
+                        <div class="text-zinc-400">Sep 2022 – May 2023</div>
+                        <div class="font-semibold text-2xl mt-1">Miraj Lighting</div>
+                        <div class="text-cyan-400">Social Media Manager • Lahore</div>
+                    </div>
+                    <div class="md:col-span-8 text-zinc-300">
+                        <ul class="space-y-4 list-disc list-outside pl-5">
+                            <li>Managed and scaled multiple social media accounts with content calendars and daily posting.</li>
+                            <li>Led audience research, trend analysis, and campaign planning that drove significant growth.</li>
+                            <li>Monitored analytics and optimized reach &amp; engagement.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="section-title text-5xl heading-font font-semibold">Featured Projects</h2>
+                <a href="#" class="text-cyan-400 hover:underline flex items-center gap-2 text-sm">
+                    View all campaigns <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-zinc-950 border border-white/10 rounded-3xl overflow-hidden card-hover">
+                    <div class="h-64 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-6xl">
+                        🇬🇧
+                    </div>
+                    <div class="p-8">
+                        <div class="text-emerald-400 text-sm font-medium mb-2">UK CLIENT • META ADS</div>
+                        <h3 class="text-2xl font-semibold mb-3">Premium Home Services Lead Gen</h3>
+                        <p class="text-zinc-400 text-sm mb-6">Generated 340+ qualified leads in 45 days with 6.8x ROAS using sophisticated full-funnel Meta campaign + custom landing page.</p>
+                        <div class="flex gap-2">
+                            <span class="px-4 py-1 bg-white/5 text-xs rounded-full">Meta Ads</span>
+                            <span class="px-4 py-1 bg-white/5 text-xs rounded-full">Landing Page</span>
+                            <span class="px-4 py-1 bg-white/5 text-xs rounded-full">UK Market</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-zinc-950 border border-white/10 rounded-3xl overflow-hidden card-hover">
+                    <div class="h-64 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center text-6xl">
+                        🇺🇸
+                    </div>
+                    <div class="p-8">
+                        <div class="text-emerald-400 text-sm font-medium mb-2">US ECOMMERCE • YOUTUBE + META</div>
+                        <h3 class="text-2xl font-semibold mb-3">Fitness Supplement Brand Growth</h3>
+                        <p class="text-zinc-400 text-sm mb-6">YouTube SEO optimization + Meta retargeting campaign that increased monthly revenue by 184% for a US-based wellness brand.</p>
+                        <div class="flex gap-2">
+                            <span class="px-4 py-1 bg-white/5 text-xs rounded-full">YouTube SEO</span>
+                            <span class="px-4 py-1 bg-white/5 text-xs rounded-full">Meta Ads</span>
+                            <span class="px-4 py-1 bg-white/5 text-xs rounded-full">Content Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-zinc-950 border border-white/10 rounded-3xl overflow-hidden card-hover">
+                    <div class="h-64 bg-gradient-to-br from-amber-500 to-red-600 flex items-center justify-center text-6xl">
+                        🇵🇰
+                    </div>
+                    <div class="p-8">
+                        <div class="text-emerald-400 text-sm font-medium mb-2">PAKISTAN + INTERNATIONAL</div>
+                        <h3 class="text-2xl font-semibold mb-3">Real Estate Lead Generation Engine</h3>
+                        <p class="text-zinc-400 text-sm mb-6">Built complete lead generation system delivering 120+ monthly qualified leads for a premium housing project with integrated social proof campaigns.</p>
+                        <div class="flex gap-2">
+                            <span class="px-4 py-1 bg-white/5 text-xs rounded-full">Full Funnel</span>
+                            <span class="px-4 py-1 bg-white/5 text-xs rounded-full">Lead Gen</span>
+                            <span class="px-4 py-1 bg-white/5 text-xs rounded-full">Social Media</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title text-5xl heading-font font-semibold mb-12">Skills &amp; Expertise</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+                    <div class="text-4xl mb-6">📱</div>
+                    <h4 class="font-semibold mb-4 text-xl">Social Media Mastery</h4>
+                    <ul class="space-y-3 text-zinc-400">
+                        <li>• Meta (Facebook + Instagram)</li>
+                        <li>• LinkedIn &amp; TikTok</li>
+                        <li>• Content Calendars</li>
+                        <li>• Community Management</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+                    <div class="text-4xl mb-6">💰</div>
+                    <h4 class="font-semibold mb-4 text-xl">Paid Advertising</h4>
+                    <ul class="space-y-3 text-zinc-400">
+                        <li>• Meta Ads Manager</li>
+                        <li>• Google Ads</li>
+                        <li>• Audience Targeting</li>
+                        <li>• A/B Testing &amp; Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+                    <div class="text-4xl mb-6">🎥</div>
+                    <h4 class="font-semibold mb-4 text-xl">YouTube &amp; SEO</h4>
+                    <ul class="space-y-3 text-zinc-400">
+                        <li>• YouTube SEO Optimization</li>
+                        <li>• Video Strategy</li>
+                        <li>• Channel Growth</li>
+                        <li>• Analytics &amp; Reporting</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+                    <div class="text-4xl mb-6">💻</div>
+                    <h4 class="font-semibold mb-4 text-xl">Technical</h4>
+                    <ul class="space-y-3 text-zinc-400">
+                        <li>• Landing Page Optimization</li>
+                        <li>• Basic Front-End Development</li>
+                        <li>• Analytics Tools (GA4, Meta Pixel)</li>
+                        <li>• Creative Suite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="max-w-md mx-auto">
+                <div class="text-cyan-400 mb-4">EDUCATION</div>
+                <h3 class="text-3xl font-semibold mb-2">Information Technology</h3>
+                <p class="text-zinc-400">Government College of Science, Lahore</p>
+                <p class="text-sm text-zinc-500">2022 — 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-5xl heading-font font-semibold mb-6">Let's create something<br>exceptional together</h2>
+            <p class="text-xl text-zinc-400 mb-12">Open to international collaborations and freelance projects</p>
+            
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="mailto:tahafiaz7@gmail.com" 
+                   class="px-10 py-6 bg-white text-black rounded-3xl font-semibold text-lg flex items-center justify-center gap-3 hover:scale-105 transition-all">
+                    <i class="fas fa-envelope"></i>
+                    Email Me
+                </a>
+                <a href="tel:+923236449416" 
+                   class="px-10 py-6 border border-white/30 rounded-3xl font-semibold text-lg flex items-center justify-center gap-3 hover:bg-white/5 transition-all">
+                    <i class="fas fa-phone"></i>
+                    +92 323 6449416
+                </a>
+            </div>
+            
+            <div class="mt-16 text-xs text-zinc-500">
+                Lahore, Pakistan • Available for remote work worldwide
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 text-center text-xs text-zinc-500">
+        © 2026 Taha Imran. Built with passion for digital growth.
+    </footer>
+
+    <script>
+        // Tailwind script already included via CDN
+        console.log("%cTaha Imran Portfolio - Ready 🚀", "color: #00f0ff; font-size: 13px;");
+    </script>
+</body>
+</html>
